@@ -47,7 +47,7 @@ export default function Orders() {
                   Fulfilled
                 </Badge>
               </TableCell>
-              <TableCell className="hidden md:table-cell">2023-06-23</TableCell>
+              <TableCell className="hidden md:table-cell">2025-01-23</TableCell>
               <TableCell className="text-right">$250.00</TableCell>
             </TableRow>
             <TableRow>
@@ -63,7 +63,7 @@ export default function Orders() {
                   Declined
                 </Badge>
               </TableCell>
-              <TableCell className="hidden md:table-cell">2023-06-24</TableCell>
+              <TableCell className="hidden md:table-cell">2025-01-24</TableCell>
               <TableCell className="text-right">$150.00</TableCell>
             </TableRow>
             <TableRow>
@@ -81,7 +81,7 @@ export default function Orders() {
                   Fulfilled
                 </Badge>
               </TableCell>
-              <TableCell className="hidden md:table-cell">2023-06-25</TableCell>
+              <TableCell className="hidden md:table-cell">2025-01-25</TableCell>
               <TableCell className="text-right">$350.00</TableCell>
             </TableRow>
             <TableRow>
@@ -97,7 +97,7 @@ export default function Orders() {
                   Fulfilled
                 </Badge>
               </TableCell>
-              <TableCell className="hidden md:table-cell">2023-06-26</TableCell>
+              <TableCell className="hidden md:table-cell">2025-01-26</TableCell>
               <TableCell className="text-right">$450.00</TableCell>
             </TableRow>
             <TableRow>
@@ -113,7 +113,7 @@ export default function Orders() {
                   Fulfilled
                 </Badge>
               </TableCell>
-              <TableCell className="hidden md:table-cell">2023-06-23</TableCell>
+              <TableCell className="hidden md:table-cell">2025-06-23</TableCell>
               <TableCell className="text-right">$250.00</TableCell>
             </TableRow>
             <TableRow>
@@ -129,7 +129,7 @@ export default function Orders() {
                   Fulfilled
                 </Badge>
               </TableCell>
-              <TableCell className="hidden md:table-cell">2023-06-23</TableCell>
+              <TableCell className="hidden md:table-cell">2025-06-23</TableCell>
               <TableCell className="text-right">$250.00</TableCell>
             </TableRow>
             <TableRow>

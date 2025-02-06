@@ -1,7 +1,6 @@
 import Link from "next/link";
 import {
   Bell,
-  CircleUser,
   Home,
   LineChart,
   Menu,
@@ -32,6 +31,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { ModeToggle } from "@/components/ui/mode-toggle";
 import Orders from "@/components/features/orders";
 import AdminSearch from "@/components/features/admin-search";
+import Image from "next/image";
 
 export default function Dashboard() {
   return (
@@ -41,7 +41,7 @@ export default function Dashboard() {
           <div className="flex h-14 items-center border-b px-4 lg:h-[60px] lg:px-6">
             <Link href="/" className="flex items-center gap-2 font-semibold">
               <Package2 className="h-6 w-6" />
-              <span className="">Acme Inc</span>
+              <span className="">Hekto</span>
             </Link>
             <Button variant="outline" size="icon" className="ml-auto h-8 w-8">
               <Bell className="h-4 w-4" />
@@ -75,14 +75,14 @@ export default function Dashboard() {
                 Products{" "}
               </Link>
               <Link
-                href="#"
+                href="customers"
                 className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
               >
                 <Users className="h-4 w-4" />
                 Customers
               </Link>
               <Link
-                href="#"
+                href="/"
                 className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
               >
                 <LineChart className="h-4 w-4" />
@@ -194,17 +194,31 @@ export default function Dashboard() {
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="secondary" size="icon" className="rounded-full">
-                <CircleUser className="h-5 w-5" />
+                <Image
+                  src="/profile.png" // Replace with the actual profile image URL
+                  alt="User Profile"
+                  width={32} // Adjust size as needed
+                  height={32}
+                  className="rounded-full"
+                />
                 <span className="sr-only">Toggle user menu</span>
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end">
-              <DropdownMenuLabel>My Account</DropdownMenuLabel>
-              <DropdownMenuSeparator />
-              <DropdownMenuItem>Settings</DropdownMenuItem>
-              <DropdownMenuItem>Support</DropdownMenuItem>
-              <DropdownMenuSeparator />
-              <DropdownMenuItem>Logout</DropdownMenuItem>
+              <Link href="/admin/profile">
+                <DropdownMenuLabel>My Account</DropdownMenuLabel>
+                <DropdownMenuSeparator />
+              </Link>
+              <Link href="/admin/settings">
+                <DropdownMenuItem>Settings</DropdownMenuItem>
+              </Link>
+              <Link href="/admin/support">
+                <DropdownMenuItem>Support</DropdownMenuItem>
+                <DropdownMenuSeparator />
+              </Link>
+              <Link href="/">
+                <DropdownMenuItem>Logout</DropdownMenuItem>
+              </Link>
             </DropdownMenuContent>
           </DropdownMenu>
         </header>
