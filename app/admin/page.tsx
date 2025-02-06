@@ -12,16 +12,13 @@ export default function AdminLogin() {
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
 
-
     if (email === "mk7275374@gmail.com" && password === "Kamran123") {
       localStorage.setItem("isLoggedIn", "true");
       router.push("/admin/dashboard");
     } else {
       alert("Invalid email or password");
     }
-    
   };
-
 
   return (
     <div className="flex justify-center items-center h-screen bg-gray-100">

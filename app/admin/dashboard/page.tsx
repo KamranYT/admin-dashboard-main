@@ -32,6 +32,8 @@ import { ModeToggle } from "@/components/ui/mode-toggle";
 import Orders from "@/components/features/orders";
 import AdminSearch from "@/components/features/admin-search";
 import Image from "next/image";
+import { NotificationButton } from "@/components/NotificationButton";
+import { DropdownMenuDemo } from "@/components/DropdownMenuDemo";
 
 export default function Dashboard() {
   return (
@@ -43,10 +45,11 @@ export default function Dashboard() {
               <Package2 className="h-6 w-6" />
               <span className="">Hekto</span>
             </Link>
-            <Button variant="outline" size="icon" className="ml-auto h-8 w-8">
+            {/* <Button variant="outline" size="icon" className="ml-auto h-8 w-8">
               <Bell className="h-4 w-4" />
               <span className="sr-only">Toggle notifications</span>
-            </Button>
+            </Button> */}
+            <NotificationButton />
           </div>
           <div className="flex-1">
             <nav className="grid items-start px-2 text-sm font-medium lg:px-4">
@@ -82,7 +85,7 @@ export default function Dashboard() {
                 Customers
               </Link>
               <Link
-                href="/"
+                href="/tooltip"
                 className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
               >
                 <LineChart className="h-4 w-4" />
@@ -191,8 +194,8 @@ export default function Dashboard() {
             <AdminSearch />
           </div>
           <ModeToggle />
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
+          {/* <DropdownMenu> */}
+          {/* <DropdownMenuTrigger asChild>
               <Button variant="secondary" size="icon" className="rounded-full">
                 <Image
                   src="/profile.png" // Replace with the actual profile image URL
@@ -203,8 +206,8 @@ export default function Dashboard() {
                 />
                 <span className="sr-only">Toggle user menu</span>
               </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent align="end">
+            </DropdownMenuTrigger> */}
+          {/* <DropdownMenuContent align="end">
               <Link href="/admin/profile">
                 <DropdownMenuLabel>My Account</DropdownMenuLabel>
                 <DropdownMenuSeparator />
@@ -219,8 +222,9 @@ export default function Dashboard() {
               <Link href="/">
                 <DropdownMenuItem>Logout</DropdownMenuItem>
               </Link>
-            </DropdownMenuContent>
-          </DropdownMenu>
+            </DropdownMenuContent> */}
+          <DropdownMenuDemo />
+          {/* </DropdownMenu> */}
         </header>
         <main className="flex flex-1 flex-col gap-4 p-4 lg:gap-6 lg:p-6">
           <Orders />
