@@ -1,6 +1,5 @@
 import Link from "next/link";
 import {
-  Bell,
   Home,
   LineChart,
   Menu,
@@ -19,19 +18,10 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { ModeToggle } from "@/components/ui/mode-toggle";
 import Orders from "@/components/features/orders";
 import AdminSearch from "@/components/features/admin-search";
-import Image from "next/image";
 import { NotificationButton } from "@/components/NotificationButton";
 import { DropdownMenuDemo } from "@/components/DropdownMenuDemo";
 
