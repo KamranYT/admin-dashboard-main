@@ -24,6 +24,7 @@ import Orders from "@/components/features/orders";
 import AdminSearch from "@/components/features/admin-search";
 import { NotificationButton } from "@/components/NotificationButton";
 import { DropdownMenuDemo } from "@/components/DropdownMenuDemo";
+import { Chart } from "@/components/Chart";
 
 export default function Dashboard() {
   return (
@@ -51,7 +52,7 @@ export default function Dashboard() {
                 Dashboard
               </Link>
               <Link
-                href="#"
+                href="/admin/dashboard"
                 className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
               >
                 <ShoppingCart className="h-4 w-4" />
@@ -65,7 +66,7 @@ export default function Dashboard() {
                 className="flex items-center gap-3 rounded-lg bg-muted px-3 py-2 text-primary transition-all hover:text-primary"
               >
                 <Package className="h-4 w-4" />
-                Products{" "}
+                Products
               </Link>
               <Link
                 href="customers"
@@ -79,7 +80,7 @@ export default function Dashboard() {
                 className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
               >
                 <LineChart className="h-4 w-4" />
-                Analytics
+                Analytics{" "}
               </Link>
             </nav>
           </div>
@@ -131,7 +132,7 @@ export default function Dashboard() {
                   Dashboard
                 </Link>
                 <Link
-                  href="#"
+                  href="/admin/dashboard"
                   className="mx-[-0.65rem] flex items-center gap-4 rounded-xl bg-muted px-3 py-2 text-foreground hover:text-foreground"
                 >
                   <ShoppingCart className="h-5 w-5" />
@@ -184,40 +185,11 @@ export default function Dashboard() {
             <AdminSearch />
           </div>
           <ModeToggle />
-          {/* <DropdownMenu> */}
-          {/* <DropdownMenuTrigger asChild>
-              <Button variant="secondary" size="icon" className="rounded-full">
-                <Image
-                  src="/profile.png" // Replace with the actual profile image URL
-                  alt="User Profile"
-                  width={32} // Adjust size as needed
-                  height={32}
-                  className="rounded-full"
-                />
-                <span className="sr-only">Toggle user menu</span>
-              </Button>
-            </DropdownMenuTrigger> */}
-          {/* <DropdownMenuContent align="end">
-              <Link href="/admin/profile">
-                <DropdownMenuLabel>My Account</DropdownMenuLabel>
-                <DropdownMenuSeparator />
-              </Link>
-              <Link href="/admin/settings">
-                <DropdownMenuItem>Settings</DropdownMenuItem>
-              </Link>
-              <Link href="/admin/support">
-                <DropdownMenuItem>Support</DropdownMenuItem>
-                <DropdownMenuSeparator />
-              </Link>
-              <Link href="/">
-                <DropdownMenuItem>Logout</DropdownMenuItem>
-              </Link>
-            </DropdownMenuContent> */}
+
           <DropdownMenuDemo />
-          {/* </DropdownMenu> */}
         </header>
         <main className="flex flex-1 flex-col gap-4 p-4 lg:gap-6 lg:p-6">
-          <Orders />
+          <Chart />
         </main>
       </div>
     </div>
