@@ -20,10 +20,10 @@ import {
 } from "@/components/ui/card";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { ModeToggle } from "@/components/ui/mode-toggle";
-import Orders from "@/components/features/orders";
 import AdminSearch from "@/components/features/admin-search";
 import { NotificationButton } from "@/components/NotificationButton";
 import { DropdownMenuDemo } from "@/components/DropdownMenuDemo";
+import { DataTableDemo } from "@/components/Customers";
 
 export default function Dashboard() {
   return (
@@ -51,7 +51,7 @@ export default function Dashboard() {
                 Dashboard
               </Link>
               <Link
-                href="#"
+                href="/admin/dashboard"
                 className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
               >
                 <ShoppingCart className="h-4 w-4" />
@@ -68,7 +68,7 @@ export default function Dashboard() {
                 Products{" "}
               </Link>
               <Link
-                href="/customers"
+                href="customers"
                 className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
               >
                 <Users className="h-4 w-4" />
@@ -131,7 +131,7 @@ export default function Dashboard() {
                   Dashboard
                 </Link>
                 <Link
-                  href="#"
+                  href="/admin/dashboard"
                   className="mx-[-0.65rem] flex items-center gap-4 rounded-xl bg-muted px-3 py-2 text-foreground hover:text-foreground"
                 >
                   <ShoppingCart className="h-5 w-5" />
@@ -148,7 +148,7 @@ export default function Dashboard() {
                   Products
                 </Link>
                 <Link
-                  href="/customers"
+                  href="#"
                   className="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground"
                 >
                   <Users className="h-5 w-5" />
@@ -217,7 +217,7 @@ export default function Dashboard() {
           {/* </DropdownMenu> */}
         </header>
         <main className="flex flex-1 flex-col gap-4 p-4 lg:gap-6 lg:p-6">
-          <Orders />
+          <DataTableDemo />
         </main>
       </div>
     </div>

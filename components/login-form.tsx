@@ -27,8 +27,8 @@ export function LoginForm({
     e.preventDefault();
 
     // Admin credentials (Change these if needed)
-    const adminEmail = "admin@example.com";
-    const adminPassword = "admin123";
+    const adminEmail = "mk@admin.com";
+    const adminPassword = "mk123";
 
     if (email === adminEmail && password === adminPassword) {
       console.log("Login successful");
