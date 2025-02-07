@@ -14,7 +14,6 @@ import {
   User,
   UserPlus,
   Users,
-  FacebookIcon,
 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
