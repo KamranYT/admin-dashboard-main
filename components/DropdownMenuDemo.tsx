@@ -14,6 +14,7 @@ import {
   User,
   UserPlus,
   Users,
+  Linkedin,
 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
@@ -128,6 +129,12 @@ export function DropdownMenuDemo() {
           <DropdownMenuItem>
             <Github />
             <span>GitHub</span>
+          </DropdownMenuItem>
+        </Link>
+        <Link href="https://www.linkedin.com/in/muhammad-kamran-916b752b4/">
+          <DropdownMenuItem>
+            <Linkedin />
+            <span>LinkedIn</span>
           </DropdownMenuItem>
         </Link>
         <Link href="https://web.facebook.com/profile.php?id=100080963443012">
